@@ -7,7 +7,23 @@ class StudentProfile {
     
     public function completeLevel(Request $request)
     {
-        $request = $request->all();
+
+        $student = request()->user()->student;
+
+        $level = $request->level;
+        $section = $request->section;
+        $year = $request->annee;
+
+        $student->level_id = $level;
+        $student->year_id = $year;
+        $student->section_id = $section;
+        
+        $student->save();
+
+        return response()->json([
+            'student' => $student,
+            'success' => ' votre niveau de scolarité est enregistré avec success !'
+        ], 201); // Status code here
         
     }
 }
