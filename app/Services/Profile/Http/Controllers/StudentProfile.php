@@ -13,10 +13,12 @@ class StudentProfile {
         $level = $request->level;
         $section = $request->section;
         $year = $request->annee;
+        $type = $request->type;
 
         $student->level_id = $level;
         $student->year_id = $year;
         $student->section_id = $section;
+        $student->type_id = $type;
         
         $student->profile_completed = 1;
         $student->save();

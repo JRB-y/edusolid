@@ -21,11 +21,13 @@ class DashboardController extends Controller{
     public function index()
     {
         $user = request()->user();
-        if(!$user->profile_completed){
-            return view('profile::completeProfile-step1')->with('profile', $user);
+        if($user->role_id == 2){
+            if(!$user->student->profile_completed){
+                return view('profile::completeProfile-step1')->with('profile', $user);
+            }
+
         }
         $dashboard = new Dashboard($user);
-        
         return view('dashboard::index')->withDashboard($dashboard);
     }
 

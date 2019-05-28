@@ -182,6 +182,7 @@ return [
         App\Services\Dashboard\DashboardServiceProvider::class,
         App\Services\Profile\ProfileServiceProvider::class,
         App\Services\Student\StudentServiceProvider::class,
+        App\Services\Levels\LevelsServiceProvider::class,
 
     ],
 

@@ -118,7 +118,7 @@
                     </div>
                     <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
-                        <option value="6">Informatique</option>
+                        <option value="3">Informatique</option>
                     </select>
                 </div>
             </div>
@@ -130,24 +130,23 @@
                     </div>
                     <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
-                        <option value="7">Droit des Ressources Humaines</option>
-                        <option value="8">Comptabilité</option>
-                        <option value="9">Droit de l'Entreprise et des affaires</option>
-                        <option value="10">Contentieux administratif et fiscal</option>
-                        <option value="11">Droit privé</option>
-                        <option value="12">Droit Public</option>
-                        <option value="13">Anglais</option>
-                        <option value="14">Francais</option>
-                        <option value="15">Géographie</option>
-                        <option value="16">Métiers du livre</option>
-                        <option value="17">Métiers de patrimoine</option>
-                        <option value="18">Métiers de patrimoine</option>
-                        <option value="19">Informatique</option>
-                        <option value="20">Réseaux informatiques</option>
-                        <option value="21">Sciences et Technologies de l'Information et de la Communication (STIC)</option>
-                        <option value="22">Energétique</option>
-                        <option value="23">Electronique, Electrotechnique et Automatique (EEA)</option>
-                        <option value="24">Physique</option>
+                        <option value="6">Droit des Ressources Humaines</option>
+                        <option value="7">Comptabilité</option>
+                        <option value="8">Droit de l'Entreprise et des affaires</option>
+                        <option value="9">Contentieux administratif et fiscal</option>
+                        <option value="10">Droit privé</option>
+                        <option value="11">Droit Public</option>
+                        <option value="12">Anglais</option>
+                        <option value="13">Francais</option>
+                        <option value="14">Géographie</option>
+                        <option value="15">Métiers du livre</option>
+                        <option value="16">Métiers de patrimoine</option>
+                        <option value="3">Informatique</option>
+                        <option value="17">Réseaux informatiques</option>
+                        <option value="18">Sciences et Technologies de l'Information et de la Communication (STIC)</option>
+                        <option value="19">Energétique</option>
+                        <option value="20">Electronique, Electrotechnique et Automatique (EEA)</option>
+                        <option value="21">Physique</option>
                     </select>
                 </div>
             </div>
@@ -161,12 +160,12 @@
                     <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                         <!-- master de recherche -->
-                        <option value="25">Sciences Politiques</option>
-                        <option value="9">Droit de l'Entreprise et des affaires</option>
-                         <option value="26">Economie</option>
-                        <option value="27">Gestion</option>
-                        <option value="11">Droit privé</option>
-                        <option value="12">Droit Public</option>
+                        <option value="22">Sciences Politiques</option>
+                        <option value="8">Droit de l'Entreprise et des affaires</option>
+                         <option value="23">Economie</option>
+                        <option value="24">Gestion</option>
+                        <option value="10">Droit privé</option>
+                        <option value="11">Droit Public</option>
                     </select>
                 </div>
             </div>
@@ -180,11 +179,11 @@
                     <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                          <!-- master de recherche -->
-                         <option value="11">Droit privé</option>
-                        <option value="12">Droit Public</option>
-                        <option value="27">Histoire contemporaine</option>
-                        <option value="28">Histoire moderne</option>
-                        <option value="29">Histoire ancienne</option>
+                         <option value="10">Droit privé</option>
+                        <option value="11">Droit Public</option>
+                        <option value="25">Histoire contemporaine</option>
+                        <option value="26">Histoire moderne</option>
+                        <option value="27">Histoire ancienne</option>
                     </select>
                 </div>
             </div>
@@ -197,8 +196,8 @@
                     </div>
                     <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
-                        <option value="9">Droit de l'Entreprise et des affaires</option>
-                        <option value="30">Droit des Collectivités Locales</option>
+                        <option value="8">Droit de l'Entreprise et des affaires</option>
+                        <option value="28">Droit des Collectivités Locales</option>
                     </select>
                 </div>
             </div>
@@ -211,8 +210,8 @@
                     </div>
                     <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
-                        <option value="31">Math - Physique (MP)</option>
-                        <option value="32">Physique - Chimie (MC)</option>
+                        <option value="29">Math - Physique (MP)</option>
+                        <option value="30">Physique - Chimie (MC)</option>
                     </select>
                 </div>
             </div>
@@ -223,7 +222,7 @@
         <!-- submit -->
         <div class="row">
             <div class="col-md-12">
-                <button type="button" class="btn-common btn-success pull-right" 
+                <button type="button" class="btn-common bg-main-green pull-right" 
                     v-if="(step == 3 && level == 1 && annee >= 7) || (level == 2 && annee ==1) || (step == 4 && section != 0 && level <3) || step >= 5"
                     @click="submit()">Envoyer</button>
                 <button type="button" :disabled="step == 1" class="btn-common btn-secondary pull-right"

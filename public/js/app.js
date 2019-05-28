@@ -2022,7 +2022,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'StudentCompleteProfile',
   data: function data() {
@@ -37057,7 +37056,7 @@ var render = function() {
                         _vm._v("Séction")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "6" } }, [
+                      _c("option", { attrs: { value: "3" } }, [
                         _vm._v("Informatique")
                       ])
                     ]
@@ -37110,79 +37109,75 @@ var render = function() {
                         _vm._v("Séction")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "7" } }, [
+                      _c("option", { attrs: { value: "6" } }, [
                         _vm._v("Droit des Ressources Humaines")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "8" } }, [
+                      _c("option", { attrs: { value: "7" } }, [
                         _vm._v("Comptabilité")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "9" } }, [
+                      _c("option", { attrs: { value: "8" } }, [
                         _vm._v("Droit de l'Entreprise et des affaires")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "10" } }, [
+                      _c("option", { attrs: { value: "9" } }, [
                         _vm._v("Contentieux administratif et fiscal")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "11" } }, [
+                      _c("option", { attrs: { value: "10" } }, [
                         _vm._v("Droit privé")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "12" } }, [
+                      _c("option", { attrs: { value: "11" } }, [
                         _vm._v("Droit Public")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "13" } }, [
+                      _c("option", { attrs: { value: "12" } }, [
                         _vm._v("Anglais")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "14" } }, [
+                      _c("option", { attrs: { value: "13" } }, [
                         _vm._v("Francais")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "15" } }, [
+                      _c("option", { attrs: { value: "14" } }, [
                         _vm._v("Géographie")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "16" } }, [
+                      _c("option", { attrs: { value: "15" } }, [
                         _vm._v("Métiers du livre")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "17" } }, [
+                      _c("option", { attrs: { value: "16" } }, [
                         _vm._v("Métiers de patrimoine")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "18" } }, [
-                        _vm._v("Métiers de patrimoine")
-                      ]),
-                      _vm._v(" "),
-                      _c("option", { attrs: { value: "19" } }, [
+                      _c("option", { attrs: { value: "3" } }, [
                         _vm._v("Informatique")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "20" } }, [
+                      _c("option", { attrs: { value: "17" } }, [
                         _vm._v("Réseaux informatiques")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "21" } }, [
+                      _c("option", { attrs: { value: "18" } }, [
                         _vm._v(
                           "Sciences et Technologies de l'Information et de la Communication (STIC)"
                         )
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "22" } }, [
+                      _c("option", { attrs: { value: "19" } }, [
                         _vm._v("Energétique")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "23" } }, [
+                      _c("option", { attrs: { value: "20" } }, [
                         _vm._v(
                           "Electronique, Electrotechnique et Automatique (EEA)"
                         )
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "24" } }, [
+                      _c("option", { attrs: { value: "21" } }, [
                         _vm._v("Physique")
                       ])
                     ]
@@ -37235,27 +37230,27 @@ var render = function() {
                         _vm._v("Séction")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "25" } }, [
+                      _c("option", { attrs: { value: "22" } }, [
                         _vm._v("Sciences Politiques")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "9" } }, [
+                      _c("option", { attrs: { value: "8" } }, [
                         _vm._v("Droit de l'Entreprise et des affaires")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "26" } }, [
+                      _c("option", { attrs: { value: "23" } }, [
                         _vm._v("Economie")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "27" } }, [
+                      _c("option", { attrs: { value: "24" } }, [
                         _vm._v("Gestion")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "11" } }, [
+                      _c("option", { attrs: { value: "10" } }, [
                         _vm._v("Droit privé")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "12" } }, [
+                      _c("option", { attrs: { value: "11" } }, [
                         _vm._v("Droit Public")
                       ])
                     ]
@@ -37308,23 +37303,23 @@ var render = function() {
                         _vm._v("Séction")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "11" } }, [
+                      _c("option", { attrs: { value: "10" } }, [
                         _vm._v("Droit privé")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "12" } }, [
+                      _c("option", { attrs: { value: "11" } }, [
                         _vm._v("Droit Public")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "27" } }, [
+                      _c("option", { attrs: { value: "25" } }, [
                         _vm._v("Histoire contemporaine")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "28" } }, [
+                      _c("option", { attrs: { value: "26" } }, [
                         _vm._v("Histoire moderne")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "29" } }, [
+                      _c("option", { attrs: { value: "27" } }, [
                         _vm._v("Histoire ancienne")
                       ])
                     ]
@@ -37377,11 +37372,11 @@ var render = function() {
                         _vm._v("Séction")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "9" } }, [
+                      _c("option", { attrs: { value: "8" } }, [
                         _vm._v("Droit de l'Entreprise et des affaires")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "30" } }, [
+                      _c("option", { attrs: { value: "28" } }, [
                         _vm._v("Droit des Collectivités Locales")
                       ])
                     ]
@@ -37434,11 +37429,11 @@ var render = function() {
                         _vm._v("Séction")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "31" } }, [
+                      _c("option", { attrs: { value: "29" } }, [
                         _vm._v("Math - Physique (MP)")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "32" } }, [
+                      _c("option", { attrs: { value: "30" } }, [
                         _vm._v("Physique - Chimie (MC)")
                       ])
                     ]
@@ -37458,7 +37453,7 @@ var render = function() {
           ? _c(
               "button",
               {
-                staticClass: "btn-common btn-success pull-right",
+                staticClass: "btn-common bg-main-green pull-right",
                 attrs: { type: "button" },
                 on: {
                   click: function($event) {

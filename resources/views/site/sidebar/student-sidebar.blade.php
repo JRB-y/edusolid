@@ -2,7 +2,12 @@
     <div class="sidebar-header text-center mt-10">
         <img src="https://via.placeholder.com/50" alt="" class="rounded-circle">
         <h3>{{ request()->user()->name }} {{ request()->user()->prenom }}</h3>
-        <small class="mt-1">Collège 7émme année</small>
+        @if(request()->user()->student->profile_completed) 
+        <small class="mt-1">{{request()->user()->student->fullLevel() }}</small>
+        {{-- <small class="mt-1">{{ request()->user()->student->level->name }} {{ request()->user()->student->year->name }} {{ request()->user()->student->section->name }}</small>  --}}
+        @else
+        ( <a href="{{ url('profile/complete') }}"> Completez votre profile </a> )
+        @endif
         <p class="credits-nbr">
             <i class="fa fa-money"></i> crédits <span class=""> 0 </span>
         </p>
