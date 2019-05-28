@@ -269,7 +269,8 @@ export default {
                 step: this.step
             })
             .then(function (response) {
-                console.log(response);
+                // axios.get('/profile');
+                window.location.href = "/profile"
             })
             .catch(function (error) {
                 console.log(error);

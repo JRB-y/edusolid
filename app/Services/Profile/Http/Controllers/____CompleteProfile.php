@@ -19,10 +19,11 @@ class CompleteProfile extends Controller{
         $user->name = $request->name;
         $user->prenom = $request->prenom;
         $user->student->level_id = $request->level_id;
-        $user->student->profile_completed = true;
+        $user->student->profile_completed = 1;
         $user->student->save();
-        $user->save();
+        // $user->save();
 
+        dd($user);
         return redirect('/dashboard');
     }
 }

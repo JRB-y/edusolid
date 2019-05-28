@@ -2,6 +2,7 @@
 namespace App\Services\Profile\Http\Controllers;
 
 
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -53,9 +54,10 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        
+        $user = User::find(request()->user()->id);
+        return view('profile::' . $user->role->name . '.show', compact('user'));
     }
 
     /**

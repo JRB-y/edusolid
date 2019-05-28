@@ -18,6 +18,7 @@ class StudentProfile {
         $student->year_id = $year;
         $student->section_id = $section;
         
+        $student->profile_completed = 1;
         $student->save();
 
         return response()->json([
