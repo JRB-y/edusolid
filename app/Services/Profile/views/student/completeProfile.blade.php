@@ -25,13 +25,7 @@
                 <p>Veuillez remplir les informations de votre profil</p>
                 <div class="tab-content">
                     <!--single-tab-->
-                    <form action="{{ route('validate-step-1') }}" method="POST">
-                    @csrf
-                        
                     <student-complete-profile></student-complete-profile>
-
-                        
-                    </form>
                 </div>
             </div>
         </div>
