@@ -36,7 +36,7 @@
                     <div class="card-body text-light">
                     
                             <h4 class="section-title style-4">Niveau de scolarité</h4>
-                            <span>{{ $user->student->level->name }} {{ $user->student->year->name }} {{ $user->student->section->name }}</span> 
+                            <span>{{ $user->myRole()->fullLevel() }}</span>
                             ( <a href="{{ url('profile/complete') }}">modifier</a> )
                             
                     </div>

@@ -10,6 +10,7 @@ class DashboardController extends Controller{
     {
         $user = request()->user();
         $dashboard = new Dashboard($user);
-        return view('dashboard::index', compact('dashboard'));
+        return view('dashboard::index', compact('dashboard', 'user'));
     }
+
 }

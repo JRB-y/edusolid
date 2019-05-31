@@ -3498,6 +3498,7 @@ a.value-decrease::before {
 	text-decoration: none;
     border-right: 1px solid #ebebeb;
     border-radius: 0 0 10px 10px;
+	display: block;
 }
 .sidebar-item > a:hover {
 	color: #6ac142;

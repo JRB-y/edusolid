@@ -17,7 +17,7 @@
                                 <a class="dropdown-item" href="{{ url('/dashboard') }}" >Dashboard</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="{{ url('/') }}" >Profile</a>
+                                <a class="dropdown-item" href="{{ url('/profile') }}" >Profile</a>
                             </li>
                         </ul>
                         @if(request()->user()->role->name == "student")

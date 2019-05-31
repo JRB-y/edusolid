@@ -1,13 +1,21 @@
 <?php
-namespace App\Services\Student\Traits;
+/**
+ * Created by PhpStorm.
+ * User: jrb
+ * Date: 5/31/19
+ * Time: 2:22 PM
+ */
 
-use App\Services\Levels\models\Type;
-use App\Services\Levels\models\Year;
+namespace App\Services\Levels\Traits;
+
+
 use App\Services\Levels\models\Level;
 use App\Services\Levels\models\Section;
+use App\Services\Levels\models\Type;
+use App\Services\Levels\models\Year;
 
-trait HasLevel {
-
+trait HasLevel
+{
     /**
      * level
      *
@@ -47,10 +55,10 @@ trait HasLevel {
     public function fullLevel()
     {
         if($this->level_id == 1){
-            return $this->year->name . ' année Collège';
+            return $this->year->name . '  Collège';
         }
         if($this->level_id == 2 && $this->year_id > 1){
-            return $this->year->name . ' année ' . $this->section->name;
+            return $this->year->name . ' ' . $this->section->name;
         }
         if($this->level_id == 3){
             return $this->type->name . ' ' . $this->year->name . ' ' . $this->section->name;

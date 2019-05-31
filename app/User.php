@@ -59,4 +59,13 @@ class User extends Authenticatable implements MustVerifyEmail
     public function tutor(){
         return $this->hasOne(Tutor::class);
     }
+
+    public function myRole(){
+        if($this->role_id == 2){
+            return $this->student;
+        }
+        if($this->role_id == 3) {
+            return $this->tutor;
+        }
+    }
 }
