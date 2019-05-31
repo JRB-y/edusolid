@@ -8,7 +8,7 @@
                 </div>
                 <div class="form-group">
                     <!-- <label for="level">Niveau de scolarité</label> -->
-                    <select name="level_id" id="level" v-model="level" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="level" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Niveau de scolarité</option>
                         <option value="1">Collège</option>
                         <option value="2">Lycée</option>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="form-group">
                     <!-- <label for="level"></label> -->
-                    <select name="level_id" id="level" v-model="annee" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="annee" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Niveau</option>
                         <option value="7">7 éme</option>
                         <option value="8">8 éme</option>
@@ -43,7 +43,7 @@
                     <h2>Niveau Lycée</h2>
                 </div>
                 <div class="form-group">
-                    <select name="level_id" id="level" v-model="annee" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="annee" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Niveau</option>
                         <option value="1">1 ére</option>
                         <option value="2">2 éme</option>
@@ -59,7 +59,7 @@
                     <div class="section-title text-center">
                         <h2>Type</h2>
                     </div>
-                    <select name="level_id" id="level" v-model="type" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="type" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Type</option>
                         <option value="1">Ingénierie</option>
                         <option value="2">Licence Appliquée</option>
@@ -81,7 +81,7 @@
                      <div class="section-title text-center">
                         <h2>Section</h2>
                     </div>
-                    <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                         <option value="1">Science</option>
                         <option value="2">Math</option>
@@ -98,7 +98,7 @@
                     <div class="section-title text-center">
                         <h2>Année d'université</h2>
                     </div>
-                    <select name="level_id" id="level" v-model="annee" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="annee" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                         <option value="1">1 ére</option>
                         <option value="2">2 éme</option>
@@ -116,7 +116,7 @@
                      <div class="section-title text-center">
                         <h2>Ingénieur</h2>
                     </div>
-                    <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                         <option value="3">Informatique</option>
                     </select>
@@ -128,7 +128,7 @@
                     <div class="section-title text-center">
                         <h2>Licence Appliquée</h2>
                     </div>
-                    <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                         <option value="6">Droit des Ressources Humaines</option>
                         <option value="7">Comptabilité</option>
@@ -157,7 +157,7 @@
                     <div class="section-title text-center">
                         <h2>Licence Fondamental</h2>
                     </div>
-                    <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                         <!-- master de recherche -->
                         <option value="22">Sciences Politiques</option>
@@ -176,7 +176,7 @@
                     <div class="section-title text-center">
                         <h2>Master de recherche</h2>
                     </div>
-                    <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                          <!-- master de recherche -->
                          <option value="10">Droit privé</option>
@@ -194,7 +194,7 @@
                     <div class="section-title text-center">
                         <h2>Master Professionnel</h2>
                     </div>
-                    <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                         <option value="8">Droit de l'Entreprise et des affaires</option>
                         <option value="28">Droit des Collectivités Locales</option>
@@ -208,7 +208,7 @@
                     <div class="section-title text-center">
                         <h2>Préparatoire</h2>
                     </div>
-                    <select name="level_id" id="level" v-model="section" class="form-control" @change="selectLevel()">
+                    <select name="level_id" v-model="section" class="form-control" @change="selectLevel()">
                         <option disabled value="0">Séction</option>
                         <option value="29">Math - Physique (MP)</option>
                         <option value="30">Physique - Chimie (MC)</option>
@@ -267,8 +267,7 @@ export default {
                 section: this.section,
                 step: this.step
             })
-            .then(function (response) {
-                // axios.get('/profile');
+            .then(function () {
                 window.location.href = "/profile"
             })
             .catch(function (error) {

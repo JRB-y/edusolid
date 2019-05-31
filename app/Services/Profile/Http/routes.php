@@ -7,7 +7,7 @@ Route::group(['prefix' => 'profile', 'namespace' => 'App\Services\Profile\Http\C
     Route::get('/', 'ProfileController@show');
 
     // return the view to complete the profile
-    Route::get('complete', 'CompleteProfile@completeProfileFormStep1');
+    Route::get('complete', 'CompleteProfile@completeProfile');
 
     // student complete profile
     Route::post('validate-step-1', 'CompleteProfile@validateStep1')->name('validate-step-1');

@@ -2,8 +2,8 @@
 
 namespace App;
 
-use App\Role;
 
+use App\Services\Tutor\Models\Tutor;
 use App\Services\Student\Models\Student;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -45,8 +45,18 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->belongsTo(Role::class);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function student()
     {
         return $this->hasOne(Student::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function tutor(){
+        return $this->hasOne(Tutor::class);
     }
 }

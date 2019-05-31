@@ -1,29 +1,23 @@
 <?php
 namespace App\Services\Profile\Http\Controllers;
 
-use App\Level;
-use Illuminate\Http\Request;
+use App\Services\Profile\Profile;
 use App\Http\Controllers\Controller;
 
 class CompleteProfile extends Controller{
 
-    public function completeProfileFormStep1()
+    protected $profile;
+
+    /**
+     * completeProfile
+     * return the view to complete a profile: it's a Vue js component inside a blade template
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function completeProfile()
     {
         $this->profile = request()->user();
-        return view('profile::completeProfile-step1')->with('profile', $this->profile);
-    }
-
-    public function validateStep1(Request $request)
-    {
-        $user = $request->user();
-        $user->name = $request->name;
-        $user->prenom = $request->prenom;
-        $user->student->level_id = $request->level_id;
-        $user->student->profile_completed = 1;
-        $user->student->save();
-        // $user->save();
-
-        dd($user);
-        return redirect('/dashboard');
+        $profile = new Profile($this->profile);
+        return view($profile->completeProfilePath)->with('profile', $this->profile);
     }
 }
