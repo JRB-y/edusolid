@@ -11,6 +11,7 @@ class StudentServiceProvider extends ServiceProvider{
             return 'student';
         });
     }
+
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__ . '/Http/routes.php');
