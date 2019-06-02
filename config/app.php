@@ -183,6 +183,7 @@ return [
         App\Services\Profile\ProfileServiceProvider::class,
         App\Services\Student\StudentServiceProvider::class,
         App\Services\Levels\LevelsServiceProvider::class,
+        App\Services\Question\QuestionServiceProvider::class,
 
     ],
 
