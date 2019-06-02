@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "bootstrap-vue": "^2.0.0-rc.21",
-        "font-awesome": "^4.7.0"
+        "font-awesome": "^4.7.0",
+        "vue2-editor": "^2.7.2"
     }
 }
