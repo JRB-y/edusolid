@@ -24,7 +24,7 @@
 		<div class="wrapper">
 
 			<!-- Sidebar -->
-			@if(request()->user()->role->name == "student")
+			@if($user->role->name == "student")
 				@include('site.sidebar.student-sidebar')
 			@else
 				@include('site.sidebar.tutor-sidebar')

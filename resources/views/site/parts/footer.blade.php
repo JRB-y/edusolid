@@ -46,12 +46,12 @@
                     <div class="footer-widget mt-30">
                         <h3>Images</h3>
                         <div class="footer-gallery mt-20">
-                            <a href="index.html#"><img src="assets/images/gallery/1.jpg" alt="" /></a>
-                            <a href="index.html#"><img src="assets/images/gallery/2.jpg" alt="" /></a>
-                            <a href="index.html#"><img src="assets/images/gallery/3.jpg" alt="" /></a>
-                            <a href="index.html#"><img src="assets/images/gallery/4.jpg" alt="" /></a>
-                            <a href="index.html#"><img src="assets/images/gallery/5.jpg" alt="" /></a>
-                            <a href="index.html#"><img src="assets/images/gallery/6.jpg" alt="" /></a>
+                            <a href="index.html#"><img src="" alt="" /></a>
+                            <a href="index.html#"><img src="" alt="" /></a>
+                            <a href="index.html#"><img src="" alt="" /></a>
+                            <a href="index.html#"><img src="" alt="" /></a>
+                            <a href="index.html#"><img src="" alt="" /></a>
+                            <a href="index.html#"><img src="" alt="" /></a>
                         </div>
                     </div>
                 </div>
