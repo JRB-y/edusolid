@@ -236,6 +236,7 @@
 
             </div>
         </transition-group>
+
         <!-- submit -->
         <div key="submit" class="row">
             <div class="col-md-12" style="height: 0px;">
@@ -307,7 +308,7 @@
         }
     }
 </script>
-<style>
+<style scoped>
     .fade-enter-active, .fade-leave-active {
         transition: opacity .5s;
     }
