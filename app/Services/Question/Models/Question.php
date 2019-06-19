@@ -15,6 +15,6 @@ class Question extends Model
 {
     use HasLevel;
 
-    protected $fillable = ['title', 'body', 'user_id', 'level_id', 'year_id', 'section_id', 'type_id'];
+    protected $fillable = ['title', 'body', 'student_id', 'level_id', 'year_id', 'section_id', 'type_id'];
 
 }

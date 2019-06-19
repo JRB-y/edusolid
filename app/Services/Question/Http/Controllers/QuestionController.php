@@ -30,7 +30,7 @@ class QuestionController extends Controller
         $this->question->create([
             'title'     => $request->title,
             'body'      => $request->body,
-            'user_id'   => Auth::user()->id
+            'student_id'   => Auth::user()->student->id
         ]);
 
         return response()->json([
