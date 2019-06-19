@@ -8,7 +8,10 @@ class DashboardController extends Controller{
 
     public function index()
     {
-        $dashboard = new Dashboard(request()->user());
+        $user = request()->user();
+
+        $dashboard = new Dashboard($user);
+
         return view('dashboard::index', compact('dashboard', 'user'));
     }
 
