@@ -6,17 +6,12 @@ class Dashboard {
     /**
      * @var
      */
-    public $user;
-
-    /**
-     * @var string
-     */
-    public $path;
+    protected $user;
 
     /**
      * @var
      */
-    public $role;
+    public $data;
 
     /**
      * Dashboard constructor.
@@ -25,7 +20,40 @@ class Dashboard {
     public function __construct($user)
     {
         $this->user = $user;
-        $this->path = \strtolower($this->user->role->name);
-        $this->role =  $this->user->role->name;
+        $this->data  = $this->getDataForUser($user);
     }
+
+    /**
+     * @param $user
+     *
+     * @return mixed
+     */
+    private function getDataForUser($user)
+    {
+        $function = $user->role->name . 'Data';
+        return Dashboard::$function($user);
+    }
+
+    /**
+     * @param $user
+     *
+     * @return array
+     */
+    private static function studentData($user){
+        return [
+            'questions' => $user->student->questions
+        ];
+    }
+
+    /**
+     * @param $user
+     *
+     * @return array
+     */
+    private static function tutorData($user){
+        return [
+            //
+        ];
+    }
+
 }
