@@ -17,14 +17,14 @@ class CreateQuestionsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('body')->nullable();
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('student_d');
 
             $table->unsignedBigInteger('level_id')->nullable();
             $table->unsignedBigInteger('year_id')->nullable();
             $table->unsignedBigInteger('section_id')->nullable();
             $table->unsignedBigInteger('type_id')->nullable();
 
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('student_d')->references('id')->on('students')->onDelete('cascade');
             $table->foreign('level_id')->references('id')->on('levels')->onDelete('cascade');
             $table->foreign('year_id')->references('id')->on('years')->onDelete('cascade');
             $table->foreign('section_id')->references('id')->on('sections')->onDelete('cascade');
