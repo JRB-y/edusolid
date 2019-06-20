@@ -21,7 +21,10 @@
         </li>
     </ul>
 
-    <ul class="list-unstyled components mt-25"> 
+    @include('tutor::go-online')
+
+
+    <ul class="list-unstyled components mt-25">
         <li class="sidebar-item">
             <a href="#"> <i class="fa fa-key"></i> Sécurité</a>
         </li>

@@ -2173,6 +2173,88 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "TutorGoOnline",
+  data: function data() {
+    return {
+      qr: null,
+      sl: null
+    };
+  },
+  mounted: function mounted() {
+    this.getQrValue();
+    this.getSlValue();
+  },
+  methods: {
+    getQrValue: function getQrValue() {
+      var _this = this;
+
+      axios.get('tutor/getAvailabilityQr').then(function (res) {
+        _this.qr = res.data;
+      });
+    },
+    getSlValue: function getSlValue() {
+      var _this2 = this;
+
+      axios.get('tutor/getAvailabilitySl').then(function (res) {
+        _this2.sl = res.data;
+      });
+    },
+    QrChanged: function QrChanged() {
+      axios.post('tutor/qrGoOnline');
+    },
+    SlChanged: function SlChanged() {
+      axios.post('tutor/slGoOnline');
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/base64-js/index.js":
 /*!*****************************************!*\
   !*** ./node_modules/base64-js/index.js ***!
@@ -79846,6 +79928,124 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=template&id=8458c546&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=template&id=8458c546&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("li", { staticClass: "sidebar-item" }, [
+      _c("label", { staticClass: "switch" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.qr,
+              expression: "qr"
+            }
+          ],
+          attrs: { type: "checkbox", "true-value": "1", "false-value": "0" },
+          domProps: {
+            checked: Array.isArray(_vm.qr)
+              ? _vm._i(_vm.qr, null) > -1
+              : _vm._q(_vm.qr, "1")
+          },
+          on: {
+            change: [
+              function($event) {
+                var $$a = _vm.qr,
+                  $$el = $event.target,
+                  $$c = $$el.checked ? "1" : "0"
+                if (Array.isArray($$a)) {
+                  var $$v = null,
+                    $$i = _vm._i($$a, $$v)
+                  if ($$el.checked) {
+                    $$i < 0 && (_vm.qr = $$a.concat([$$v]))
+                  } else {
+                    $$i > -1 &&
+                      (_vm.qr = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
+                  }
+                } else {
+                  _vm.qr = $$c
+                }
+              },
+              _vm.QrChanged
+            ]
+          }
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "slider round" })
+      ]),
+      _vm._v(" "),
+      _c("div", [_vm._v("\n            Question Réponse\n        ")])
+    ]),
+    _vm._v(" "),
+    _c("li", { staticClass: "sidebar-item" }, [
+      _c("label", { staticClass: "switch" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.sl,
+              expression: "sl"
+            }
+          ],
+          attrs: { type: "checkbox", "true-value": "1", "false-value": "0" },
+          domProps: {
+            checked: Array.isArray(_vm.sl)
+              ? _vm._i(_vm.sl, null) > -1
+              : _vm._q(_vm.sl, "1")
+          },
+          on: {
+            change: [
+              function($event) {
+                var $$a = _vm.sl,
+                  $$el = $event.target,
+                  $$c = $$el.checked ? "1" : "0"
+                if (Array.isArray($$a)) {
+                  var $$v = null,
+                    $$i = _vm._i($$a, $$v)
+                  if ($$el.checked) {
+                    $$i < 0 && (_vm.sl = $$a.concat([$$v]))
+                  } else {
+                    $$i > -1 &&
+                      (_vm.sl = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
+                  }
+                } else {
+                  _vm.sl = $$c
+                }
+              },
+              _vm.SlChanged
+            ]
+          }
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "slider round" })
+      ]),
+      _vm._v(" "),
+      _c("div", [_vm._v("\n            Session Live\n        ")])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
 /*!********************************************************************!*\
   !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
@@ -96541,9 +96741,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/es/index.js");
 /* harmony import */ var _components_Profile_CompleteProfile_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Profile/CompleteProfile.vue */ "./resources/js/components/Profile/CompleteProfile.vue");
 /* harmony import */ var _components_Question_NewQuestion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Question/NewQuestion */ "./resources/js/components/Question/NewQuestion.vue");
+/* harmony import */ var _components_Tutor_TutorGoOnline__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Tutor/TutorGoOnline */ "./resources/js/components/Tutor/TutorGoOnline.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+
 
 
 
@@ -96552,7 +96754,8 @@ var app = new Vue({
   el: '#app',
   components: {
     CompleteProfile: _components_Profile_CompleteProfile_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    NewQuestion: _components_Question_NewQuestion__WEBPACK_IMPORTED_MODULE_2__["default"]
+    NewQuestion: _components_Question_NewQuestion__WEBPACK_IMPORTED_MODULE_2__["default"],
+    TutorGoOnline: _components_Tutor_TutorGoOnline__WEBPACK_IMPORTED_MODULE_3__["default"]
   }
 });
 
@@ -96767,6 +96970,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NewQuestion_vue_vue_type_template_id_5387fb48_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NewQuestion_vue_vue_type_template_id_5387fb48_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Tutor/TutorGoOnline.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/Tutor/TutorGoOnline.vue ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TutorGoOnline_vue_vue_type_template_id_8458c546_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TutorGoOnline.vue?vue&type=template&id=8458c546&scoped=true& */ "./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=template&id=8458c546&scoped=true&");
+/* harmony import */ var _TutorGoOnline_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TutorGoOnline.vue?vue&type=script&lang=js& */ "./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TutorGoOnline_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TutorGoOnline_vue_vue_type_template_id_8458c546_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TutorGoOnline_vue_vue_type_template_id_8458c546_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "8458c546",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Tutor/TutorGoOnline.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TutorGoOnline_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./TutorGoOnline.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TutorGoOnline_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=template&id=8458c546&scoped=true&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=template&id=8458c546&scoped=true& ***!
+  \****************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TutorGoOnline_vue_vue_type_template_id_8458c546_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./TutorGoOnline.vue?vue&type=template&id=8458c546&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Tutor/TutorGoOnline.vue?vue&type=template&id=8458c546&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TutorGoOnline_vue_vue_type_template_id_8458c546_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TutorGoOnline_vue_vue_type_template_id_8458c546_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
