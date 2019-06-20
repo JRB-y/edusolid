@@ -39,7 +39,7 @@ class Dashboard {
      *
      * @return array
      */
-    private static function studentData($user){
+    protected static function studentData($user){
         return [
             'questions' => $user->student->questions
         ];
