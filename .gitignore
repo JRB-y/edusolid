@@ -18,3 +18,4 @@ Homestead.json
 .phpunit.result.cache
 .DS_Store
 .idea
+/public
