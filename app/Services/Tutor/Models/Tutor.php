@@ -8,5 +8,5 @@ class Tutor extends Model
 {
     use HasLevel;
 
-    protected $fillable = ['user_id', 'level_id', 'section_id', 'type_id', 'year_id', 'profile_completed'];
+    protected $fillable = ['user_id', 'level_id', 'section_id', 'type_id', 'year_id', 'profile_completed', 'availableQR', 'availableLive'];
 }
