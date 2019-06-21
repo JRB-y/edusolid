@@ -2,9 +2,10 @@
 namespace App\Services\Tutor\Models;
 
 use App\Services\Levels\Traits\HasLevel;
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
-class Tutor extends Model
+class Tutor extends User
 {
     use HasLevel;
 

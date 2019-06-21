@@ -1,10 +1,10 @@
 <?php
 namespace App\Services\Student\Models;
 
-use App\Services\Question\Models\Question;
-use App\User;
 
+use App\User;
 use App\Services\Levels\Traits\HasLevel;
+use App\Services\Question\Models\Question;
 use Illuminate\Database\Eloquent\Model;
 
 
@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * Class Student
  * @package App\Services\Student\Models
  */
-class Student extends Model
+class Student extends User
 {
     use HasLevel;
 
