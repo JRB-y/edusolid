@@ -18,3 +18,12 @@ Route::get('/become-tutor', 'Pages\PagesController@becomeTutor');
 
 Auth::routes(['verify' => true]);
 
+
+/**
+ * testing routes
+ */
+
+Route::get('online', function (){
+    $user = new App\User;
+    return $user->allOnline();
+});
