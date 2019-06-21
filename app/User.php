@@ -4,14 +4,16 @@ namespace App;
 
 
 use App\Services\Tutor\Models\Tutor;
-use App\Services\Student\Models\Student;
 use Illuminate\Notifications\Notifiable;
+use App\Services\Student\Models\Student;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
+    use \HighIdeas\UsersOnline\Traits\UsersOnlineTrait;
+
 
     /**
      * The attributes that are mass assignable.
